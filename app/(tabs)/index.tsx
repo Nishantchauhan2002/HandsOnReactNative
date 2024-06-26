@@ -1,11 +1,11 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { Text, View } from 'react-native'
 import React from 'react'
 import { Link } from 'expo-router'
 
 const RootLayout = () => {
   return (
-    <View style={styles.container}>
-      <Text>RootLayout</Text>
+    <View className="flex-1 items-center justify-center bg-white" >
+      <Text className = "text-3xl">RootLayout</Text>
       <Link href="/profile" style={{color:'s'}}>Go the next screen </Link>
     </View>
   )
@@ -13,11 +13,11 @@ const RootLayout = () => {
 
 export default RootLayout
 
-const styles = StyleSheet.create({
-  container:{
-    display:'flex',
-    flex:1,
-    alignItems:'center',
-    justifyContent:'center'
-  }
-})
+// const styles = StyleSheet.create({
+//   container:{
+//     display:'flex',
+//     flex:1,
+//     alignItems:'center',
+//     justifyContent:'center'
+//   }
+// })
