@@ -1,10 +1,10 @@
 import { View, Text ,Image} from 'react-native'
 import React from 'react'
 import { SafeAreaView } from "react-native-safe-area-context";
-import { Link } from 'expo-router'
+import { Link, router } from 'expo-router'
 import { ScrollView } from 'react-native'
 import { images } from '../constants'
-
+import { CustomButton } from '../components'
 
 const RootLayout = () => {
   return (
@@ -41,12 +41,20 @@ const RootLayout = () => {
             />
           </View>
 
-          <Text className="text-sm font-pregular text-gray-100 mt-7 text-center">
+          <Text className="text-sm font-regular text-gray-100 mt-7 text-center">
             Where Creativity Meets Innovation: Embark on a Journey of Limitless
             Exploration with Aora
           </Text>
 
+          
+          <CustomButton 
+          title = "Continue With Email"
+          handlePress={() => router.push("/sign-in")} 
+          containerStyles = "w-full mt-7"/>
+          
           </View>
+         
+
 
       </ScrollView>
     </SafeAreaView>
