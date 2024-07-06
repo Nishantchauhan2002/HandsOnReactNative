@@ -9,6 +9,7 @@ const FormField = ({
   handleChangeText,
   otherStyles,
   ...props
+  
 }) => {
   const [showPassword, setshowPassword] = useState(false);
   return (
